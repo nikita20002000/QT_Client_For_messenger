@@ -1,16 +1,18 @@
-# This is a sample Python script.
+import sys
+import datetime
+from PyQt6 import uic, QtCore, QtGui, QtWidgets
 
-# Press ⌃R to execute it or replace it with your code.
-# Press Double ⇧ to search everywhere for classes, files, tool windows, actions, and settings.
+class MainWindow(QtWidgets.QMainWindow):
+    ServerAdress = "http://127.0.0.1:5000"
+    MessageID = 0
+
+    def __init__(self, *args, **kwargs):
+        super(MainWindow, self).__init__(*args, **kwargs)
+        uic.loadUi('Client_QT.ui', self)
 
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press ⌘F8 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+    app = QtWidgets.QApplication(sys.argv)
+    w = MainWindow()
+    w.show()
+    sys.exit(app.exec())
