@@ -26,12 +26,18 @@
     <property name="text">
      <string>Отправить</string>
     </property>
+    <property name="iconSize">
+     <size>
+      <width>16</width>
+      <height>16</height>
+     </size>
+    </property>
    </widget>
    <widget class="QLineEdit" name="lineEdit_1">
     <property name="geometry">
      <rect>
       <x>20</x>
-      <y>280</y>
+      <y>260</y>
       <width>201</width>
       <height>21</height>
      </rect>
@@ -41,9 +47,9 @@
     <property name="geometry">
      <rect>
       <x>20</x>
-      <y>310</y>
+      <y>290</y>
       <width>371</width>
-      <height>21</height>
+      <height>41</height>
      </rect>
     </property>
    </widget>
